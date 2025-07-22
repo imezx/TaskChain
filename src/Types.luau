@@ -24,6 +24,7 @@ export type TaskChain = {
 	catch: (self: TaskChain, errorHandler: (err: any) -> any) -> TaskChain,
 	finally: (self: TaskChain, handler: () -> ()) -> TaskChain,
 	destroy: (self: TaskChain) -> (),
+	remove: (self: TaskChain) -> (),
 
 	await: (self: TaskChain) -> any?,
 	fork: (self: TaskChain) -> TaskChain,
