@@ -1,0 +1,20 @@
+[package]
+name = "imezx/taskchain"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+license = "MIT"
+authors = ["EternityDev"]
+exclude = ["**"]
+include = [
+    "default.project.json",
+    "src",
+	"src/**",
+    "LICENSE",
+    "wally.toml",
+]
+description = "simplifies complex asynchronous Roblox scripting by unifying a task queue, promises, and an automatic janitor."
+
+[dependencies]
+promise = "howmanysmall/typed-promise@4.0.3"
+janitor = "howmanysmall/janitor@1.18.3"

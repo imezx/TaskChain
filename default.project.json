@@ -1,0 +1,6 @@
+{
+  "name": "taskchain",
+  "tree": {
+    "$path": "src"
+  }
+}
