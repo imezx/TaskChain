@@ -88,7 +88,7 @@ end
 function TaskChain:wait(duration: number?): types.TaskChain
 	table.insert(self._tasks, {
 		type = "wait",
-		payload = { duration = (duration or 0.16666) },
+		payload = { duration = (duration or 0.016666) },
 	})
 	if not self._isProcessing then
 		self._isProcessing = true
